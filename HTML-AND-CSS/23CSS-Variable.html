@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables Custom Properties</title>
+    <style>
+        :root {
+            /*below the color are stored in the variable whose name can be placed anything*/
+            --primary-color: red;
+            --danger-color: blue;
+            --maxwidth: 333px
+        }
+
+        .box {
+            --box-color: green;
+
+            width: 200px;
+            height: 200px;
+            /*below the variable are palced which was already declared in (:root). */
+            background-color: var(--primary-color);
+            border: 2px solid var(--danger-color);
+            /* box-shadow: 3px 8px var(--box-color); */
+
+            margin: 2px 9px;
+        }
+
+        .container {
+            /* below the align items make the text to display in the center and justify-content helps to manage text in justified way */
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            max-width: var(--maxwidth);
+            background-color: var(--danger-color);
+            /* above the variable are placedwhere the required color are needed */
+
+            /* background-color: var(--box-color); */
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

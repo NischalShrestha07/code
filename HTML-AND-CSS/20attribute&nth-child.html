@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes and nth child Pseudo Selectors</title>
+    <style>
+        .container {
+            margin: auto;
+            display: block;
+            width: 233px;
+            border: green;
+        }
+
+
+        input {
+            display: block;
+        }
+
+        /* input[type='text'] {
+            padding: 23px;
+            border: 2px solid red;
+        } */
+        a[target] {
+            /*below this changes the color/details of the (Go to Google) */
+            font-size: 20px;
+            color: red;
+        }
+
+        /* below will apply the CSS to the third item only but currently the iten3 is red because of (2n-1) */
+        li:nth-child(3) {
+            color: aqua;
+        }
+
+        /* below will apply the CSS to the even position item only */
+        li:nth-child(2n) {
+            color: tomato;
+            background-color: black;
+        }
+
+        /* below will apply the CSS to the odd position item only */
+        li:nth-child(2n-1) {
+            color: chartreuse;
+            background-color: red;
+        }
+
+        /* and instead of the above code easy one is listed below in the comment
+        
+        For odd child
+        li:nth-child(odd){
+            color:red;
+        }
+        
+        For even child
+        li:nth-child(even){
+            color:red;
+        }
+        */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- below create the link and _main&_blank) both helps to open links in the new tab -->
+        <h1><a href="http://google.com" target="_main">Go to Google</a></h1>
+
+        <!-- form.form-control shortcut for the below code-->
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your Name:">
+            <input type="password" placeholder="Enter your Password:">
+            <input type="email" placeholder="Enter your Email:">
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+            <!-- li.item#item-$*4    shortccut for the below one. -->
+            <li class="item" id="item-1">Item1</li>
+            <li class="item" id="item-2">Item2</li>
+            <li class="item" id="item-3">Item3</li>
+            <li class="item" id="item-4">Item4</li>
+            <li class="item" id="item-5">Item5</li>
+
+        </ul>
+        <h1><a href="http://facebook.com" target="_main">Facebook</a></h1>
+    </div>
+</body>
+
+</html>

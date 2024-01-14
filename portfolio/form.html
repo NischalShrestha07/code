@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+
+    </title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <!-- <form action="/action.php">
+    <input type="tecxt" placeholder="Type Something Here:">
+</form> -->
+        <h4>Registration Form:</h4>
+        <form action="/action.php">
+            <input type="text" placeholder="Username:"><br><br>
+            <input type="password" placeholder="Enter password:">
+            <!-- password are shown in bullet form hidden. -->
+
+            <!-- Inside the label whene we place same name then it helps to have the feature of clicking icon from the text(*class XI *classs XII) as well as from bullet points.  -->
+            <br><br>
+            <label for="101">
+                <h4>Choose your grade:</h4>
+                <input type="radio" value="class XI" name="class" id="101">class XI
+                <br>
+            </label>
+            <label for="102">
+                <input type="radio" value="class XII" name="class" id="102">class XII
+            </label>
+            <br>
+            <label for="103">
+                <input type="radio" value="Bachelor" name="class" id="103">Bachelor
+            </label>
+
+            <!-- CHECKBOX USE: -->
+            <br>
+            <h4>Select Your favourite Subjects:</h4>
+
+            <label for="math">
+                <input type="checkbox" value="Math" name="subject" id="101">Math
+                <input type="checkbox" value="Science" name="subject" id="102">Science
+                <input type="checkbox" value="Computer" name="subject" id="103">Computer
+                <input type="checkbox" value="Chemistry" name="subject" id="104">Chemistry
+
+            </label>
+            <!-- <br><br> -->
+            <h4>Choose the City:</h4>
+
+            <select name="city" id="">
+                <option value="Saptari">Saptari</option>
+                <option value="Kathmandu">Kathmandu</option>
+                <option value="Duhabi">Duhabi</option>
+                <option value="Makwanpur">Makwanpur</option>
+                <option value="Jhapa">Jhapa</option>
+
+            </select>
+
+            <br><br>
+            <h4>Give Your Valuable Feedback:</h4>
+            <textarea name="Feedback" id="101" placeholder="Please Give Your Feedback Here" row="5"></textarea>
+            <input type="submit" value="submit">
+        </form>
+        <!-- iframe tag helps to show website inside website -->
+
+    </main>
+    <!-- the video is not being played.. -->
+    <!-- now its running properly and the reason of not working was that i was writting ifame and pasting the embel link from youtube so to rub only paste embel link. -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LalsbxlxY9A?si=xIfYCr7fmKzUqJ4y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

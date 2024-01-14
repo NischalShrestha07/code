@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+
+</head>
+
+<body>
+    <div class="container">
+        This is a arrow Function Tutorial.
+
+    </div>
+    <script>
+        // below when sum(40,12) is given in the console then the answer is given there.
+        // let sum = (a, b) => {
+        //     // return a + b;
+        //     console.log("The sum of the given number is:" + (a + b));
+        // }
+
+        // below is the shortcut of the above (sum) function
+        let sum2 = (a, b) => a + b;
+        let half = m => m / 2;//here its not neceessary to give the bracket to arguments
+        // function greet() {
+        //     console.log("Good Morning");
+        // }
+
+        //below is the Arrow Function which arre the alternative use of ethe above function and arrow should be like this( => )
+        // ARROW FUNCTION
+        let greet = () => {
+            console.log("Hello Brothers");
+        }
+        greet();
+        setTimeout(() => {
+            console.log("We are inside the setTimeout.");
+        }, 3000);
+
+        let obj = {
+            names: ["nischal", "Doremon", "Hattori", "Pokemon"],
+            speak() {
+                this.names.forEach((student) => {
+                    console.log("KUkdooo koo " + student);
+                });
+            }
+        }
+        obj.speak();
+
+    </script>
+</body>
+
+</html>

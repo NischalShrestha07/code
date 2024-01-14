@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height,width,borders and background</title>
+    <style>
+        #FirstPara {
+            background-color: red;
+            /* Controls the heights land width */
+
+            height: 100px;
+            /**height of the border*/
+
+            width: 455px;
+            /*width of the border*/
+
+            /* ==> border-color: darkcyan; */
+            /*color of border*/
+
+            /* ===> border-style: solid; */
+            /*border style type*/
+
+            /* this below writting way will help us to write in easy and short way.  */
+            border: 4px solid green;
+
+            border-radius: 11px;
+            /*curves the border at ends*/
+        }
+
+        #SecondPara {
+            background-color: rgb(2, 160, 105);
+            height: 100px;
+            width: 455px;
+            border-top: 3px solid violet;
+            /*this is used to divde the different colors in differt borders. */
+            border-left: 3px solid orangered;
+            border-right: 3px solid red;
+            border-bottom: 3px solid black;
+            /* border-radius: 10px; this is used for the cntrol of overal edges. */
+
+            /*below one is to control the curve of the edges.*/
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+
+
+        }
+
+        #ThirdPara {
+            height: 500px;
+            width: 650px;
+            /* background-image: url("/img.jpg") */
+            background-image: url(img.jpg);
+            background-repeat: no-repeat;
+            /*which will not repeat the image*/
+            /*if instead of no-repeat we write repeat-x or repeat-y then it will help to repeat the image in the respective axis x or yL */
+            background-position: center center;
+            background-position: top top;
+
+            /* background-position: 12px left; */
+            /*move the image 12px left*/
+        }
+    </style>
+
+</head>
+
+<body>
+    <h3>This is a heading</h3>
+    <p id="FirstPara">This is a paragraph</p>
+
+    <h3>This is a second heading</h3>
+    <p id="SecondPara">This is a second paragraph</p>
+
+    <h3>This is a third heading</h3>
+    <p id="ThirdPara"><b><u>This is a third paragraph. This paragraph is being shown
+                inside the image of mine. I am happy that I am earning this much.</u></b>
+    </p>
+
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!-- the code is incomplete so finish it after sometime -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selector</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+            font-family: cursive
+        }
+
+        .navigation {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            padding: 20px 23px;
+        }
+
+        section {
+            height: 344px;
+            /* border: 2px solid red; */
+            justify-content: center;
+            margin: 3px 108px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* 
+        section::before {
+            content: "this is a content";
+        } */
+        h1 {
+            font-size: 4rem;
+            font-family: monospace;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Welcome to the Coding World</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, perferendis laudantium numquam iusto
+            animi repudiandae quos sit molestiae eum esse aperiam assumenda nesciunt in enim doloremque consequatur
+            commodi corporis odio.</p>
+    </section>
+    <hr>
+</body>
+
+</html>

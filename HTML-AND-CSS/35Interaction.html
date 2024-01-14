@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction using alert,confirm and prompt</title>
+
+</head>
+
+<body>
+    <div class="container">
+        This is my page.
+
+
+    </div>
+    <script>
+        //the below alert take a string and shows the window which consist certain message and it doesn't return anything(cannot be stored in any variable).
+        //Alert in in-browser Javascript.
+        // alert("bro someone has been stalking your profile");
+
+        // below help to bring window which take return type(takes input from the user)
+        // let name = prompt("What's Up! What is your name?", "Guest");
+        // console.log(name);
+
+        // Confirm prompt in JS
+        //to show the window like ok or cancel  which is same as the uninstall process.
+        let deletePost = confirm("Do you really want to delete the post?");
+        // console.log(deletePost);
+        if (deletePost) {
+            console.log("Your post have been deleted successfully");
+        }
+        else
+            console.log("Your post has not been deleted.");
+    </script>
+</body>
+
+</html>

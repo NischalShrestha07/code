@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box Model</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* the below code is used to color the background color. */
+        body {
+            background-color: burlywood;
+        }
+
+        .container {
+            background-color: aqua;
+            border: 3px solid rgb(228, 19, 19);
+            padding: 17px;
+            /* padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 24px;
+            padding-right: 67px;
+            we can set the padding and margin from top left right bottom according to our needs by using these.*/
+            padding: 23px 56px 67px 45px;
+
+            /*create the margin or the space between the paragraph*/
+            margin: 35px 45px;
+            border-radius: 23px;
+            width: 533px;
+            box-sizing: border-box;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>This is my Heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus optio hic temporibus ipsam
+            maiores veniam suscipit aperiam. Sit ducimus consectetur vero tempore ullam, id voluptatibus facere veniam
+            aliquid, illo similique!</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my Second Heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus optio hic temporibus ipsam
+            maiores veniam suscipit aperiam. Sit ducimus consectetur vero tempore ullam, id voluptatibus facere veniam
+            aliquid, illo similique!</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my Third Heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus optio hic temporibus ipsam
+            maiores veniam suscipit aperiam. Sit ducimus consectetur vero tempore ullam, id voluptatibus facere veniam
+            aliquid, illo similique!</p>
+    </div>
+</body>
+
+</html>

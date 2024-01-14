@@ -1,0 +1,62 @@
+<!-- MEDIA QUERIES -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box {
+            background-color: red;
+            color: white;
+            text-align: center;
+            font-size: 72px;
+            display: none;
+        }
+
+        @media (max-width:500px) {
+            #box1 {
+                display: block;
+                background-color: aqua;
+            }
+        }
+
+        /* In below I should use min and then max for this kind of the display. */
+        /* Media Queries is same as the if staements which operates when the conditions are trueL */
+        @media (min-width:500px) and (max-width:800px) {
+            #box2 {
+                display: block;
+                background-color: gold;
+                color: red;
+            }
+        }
+
+        @media (min-width:800px) and (max-width:1000px) {
+            #box3 {
+                display: block;
+                background-color: blue;
+            }
+        }
+
+        @media (min-width:1000px) {
+            #box4 {
+                display: block;
+                background-color: green;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- .box#box$*4 and this shortcut helps to peint the numbers asendingly.  -->
+    <div class="box" id="box1">Ma Iphone Kinxu</div>
+    <div class="box" id="box2">Ma Ghar Banauxu</div>
+    <div class="box" id="box3">BABA AND MOMMMMMY </div>
+    <div class="box" id="box4">HELLO BROTHER</div>
+</body>
+
+</html>

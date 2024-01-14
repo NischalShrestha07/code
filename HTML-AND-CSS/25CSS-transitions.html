@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        #box {
+            display: flex;
+            justify-content: center;
+            /*above justifies the text from the center*/
+            align-content: center;
+            background-color: red;
+            height: 150px;
+            /*above increses the horizonals space*/
+            width: 150px;
+            /*above increses the verticals space*/
+            align-items: center;
+            /* above center the text inside the box */
+
+            /* transition-property: background-color;
+            transition-duration: 3s;
+            takes 2s to make the transitions(change color)
+            transition-timing-function: ease-out;
+            transition-delay: 2s; */
+            /* below line is the shortcut of writting above 4 lines */
+            transition: all 1s ease-in-out 1s;
+            /*above (all) is use to increse the size the box slowly  */
+        }
+
+        /* note: while using hover the there shouldn't be space btn box and hover */
+        #box:hover {
+            background-color: yellow;
+            /* color: blue; */
+            border-radius: 45px;
+            width: 1000px;
+            font-size: 25px;
+            height: 1000px;
+            /*make the curve in the edges */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is the CSS Transitions Tutorials</h1>
+    <div class="container">
+        <div class="" id="box">
+            This is my box.
+        </div>
+    </div>
+</body>
+
+</html>

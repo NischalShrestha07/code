@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript String Function.</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <script>
+        var str = "this is a string";
+        console.log(str);
+        console.log(str);
+
+        // below helps to find the position or index of the string from First occurance.
+        var position = str.indexOf('is');
+        console.log(position);
+
+        // below helps to find the position or index of the string from the Last occyarnce .
+        var position = str.lastIndexOf('is');
+        console.log(position);
+
+        // Substring from a string
+        var substr = str.slice(1, 7);//the index start from 0 then continues till 6
+        console.log(substr);
+
+        //below are used to replace the string by any other string
+        // var replaced = str.replace('string', 'Nischal');
+        // console.log(str);
+        // console.log(replaced);
+
+
+        // console.log(str.toUpperCase());//changes the fonts into Upper Case
+        // console.log(str.toLowerCase());//changes the fonts into Lower Case
+
+        // var StrWithWhiteSpaces = "   hello      how are you all good        ";
+        // console.log(StrWithWhiteSpaces);
+        // console.log(StrWithWhiteSpaces.trim());
+        // above is use to trim the whitespaces from both front and back side.
+
+        var char3 = str.charAt(2);
+        console.log(char3);
+        // above used to find the charecter of the given index 
+
+        //below does the same thing as the above charAt() keyword
+        console.log(str[2]);
+
+    </script>
+
+</body>
+
+</html>

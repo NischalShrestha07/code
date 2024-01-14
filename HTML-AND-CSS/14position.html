@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positiont</title>
+</head>
+<style>
+    /*CSS position: static(by default), absolute,relative, fixed, sticky*/
+    .container {
+        border: 2px solid black;
+        height: 1155px;
+        /*due to this the box3 is not changing its position as positiion mentioned fixed below */
+
+        background-color: yellow;
+    }
+
+    .box {
+        border: 2px solid red;
+        margin: 3px;
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        /*width and height both should be mentioned to make a aquare box in the page.*/
+
+        color: red;
+        background-color: azure;
+        border-radius: 5px;
+    }
+
+    /*the below '#box1' indicates that the first box has been grabbed which means that whatever it contains inside is for the first box1 only.*/
+    #box3 {
+        /* relative meaning : relative to its normal position and will leave a gap at its normal position.*/
+
+        /* absolute meaning: relative to the position of its first parents. */
+        /* position: fixed;/*fixws its position*/
+        /* right: 4px;
+        */
+        /*        top: 34px;
+        left: 134px; */
+
+        position: sticky;
+        top: 3px;
+        /* the above two line help to stick the box in the same position while scrolling as well. */
+    }
+
+    #box1 {
+        position: fixed;
+        /*fixs the position to differnt place of its position-*/
+        right: 4px;
+
+    }
+
+    #box2 {
+        position: absolute;
+        right: 2px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">One Lorem ipsum dolor sit amet, consectetur adipisicing elitaut incidunt magnam.
+            Ipsa, sapiente officiis iure sint quae veritatis? </div>
+        <div class="box" id="box2">TwoLorem ipsum dolor sit amet, consectetur adipisicing elitaut incidunt magnam.
+            Ipsa, sapiente officiis iure sint quae veritatis?</div>
+        <div class="box" id="box3">Three Lorem ipsum dolor sit amet, consectetur adipisicing elitaut incidunt magnam.
+            Ipsa, sapiente officiis iure sint quae veritatis?</div>
+        <div class="box" id="box4">four Lorem ipsum dolor sit amet, consectetur adipisicing elitaut incidunt magnam.
+            Ipsa, sapiente officiis iure sint quae veritatis?</div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 59px;
+}
+
+/* Naviation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    /* position: relative; */
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    /* above make the text visible from the black background */
+    opacity: 0.4;
+    /*opacity level describes the transparency-level */
+}
+
+/* Navigation Bar logo and Images */
+#logo {
+
+    margin: 34px 45px;
+}
+
+#logo img {
+    border-radius: 13px;
+    margin: 3px 6px;
+    height: 56px;
+}
+
+/* Navigation Bar:List Styling */
+#navbar {
+    position: relative;
+}
+
+#navbar ul {
+    /* used to change the items from coloumn to rows. */
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+    /* Baloo Bhai fonts are mainly used in the top and Bree Serif is used for the paragraph */
+}
+
+#navbar ul li {
+    /*below removes the bullet point*/
+    list-style: none;
+    font-size: 1.5rem;
+
+}
+
+#navbar ul li a {
+    /*display is made blck becuse we nee to do padding*/
+    display: block;
+    color: white;
+    padding: 3px 22px;
+    border-radius: 24px;
+    text-decoration: none;
+    /* above removes the uunderline */
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Home Section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 1400px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url('../burger.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1 {
+    color: black;
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+}
+
+#home p {
+    color: floralwhite;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree  Serif', serif;
+}
+
+/* Services Section */
+#services {
+    padding: 10px;
+    margin: 11px 122px;
+    display: flex;
+    text-align: center;
+}
+
+#services .box {
+    border: 2px solid red;
+    margin: 3px 6px;
+    padding: 34px;
+    text-align: center;
+    border-radius: 28px;
+    background-color: rgb(165, 204, 238);
+}
+
+#services .box img {
+    height: 00px;
+    margin: auto;
+    display: block;
+}
+
+/* #services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid blue;
+    margin: 0px 10px;
+
+    padding: 10px;
+    text-align: center;
+}
+
+#services .box img {
+    height: 160px;
+    margin: auto;
+    display: block;
+} */
+
+/* #services {} */
+
+/* #services {} */
+
+
+/* Utility Classes */
+.h-primary {
+    font-size: 3.8rem;
+    /* height: 214px;not needed */
+    padding: 12px;
+
+}
+
+.h-secondary {
+    font-size: 3.8rem;
+    padding: 12px;
+
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: skyblue;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    /* above helps to bring the clicking icon instead of pointer */
+}

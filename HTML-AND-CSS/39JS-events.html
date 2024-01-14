@@ -1,0 +1,108 @@
+<!-- program which shows details whwn clicked and hide the details when clicked again. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+
+</head>
+<style>
+    .container {
+        font-family: "Poppins", sans-serif;
+        background: transparent;
+        background: url("wow.jpg")no-repeat;
+        background-size: cover;
+        /* background-position: center; */
+        /* above helps to center the image and baground-size cover helps to cover the whole page */
+        color: lime;
+        border: 2px solid red;
+        padding: 20px 25px 20px 30px;
+        display: block;
+        font-size: 20px;
+        /* text-align: center; */
+
+    }
+
+
+    #btn {
+        padding: 34px;
+        background-color: red;
+        border: 2px solid black;
+        color: white;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>Click the red icon below</h1>
+        <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat perferendis ducimus illum, quae
+            praesentium niam ne que repudiandae commodi dolorum cum aperiam, est nam hic vero distinctio dignissimos?
+            Exercitationem voluptate aspernatur reprehenderit nulla ut, officiis cum harum, similique quae possimus
+            ipsum eligendi culpa. Magnam vitae nemo ex sed asper iores aliquam impedit sequi autem porro fugiat non
+            nihil optio perferendis pariatur voluptas in, laudantium a libero exercitationem, ab cumque, errot
+            praesentium et debitis illo eius quo mollitia voluptatum, quia pariatur. Pos simus eaque nemo ullam, ad quo
+            unde facilis obcaecati velit est assumenda vel in quibusdam, a culpa consectetur fugiat aliquam consequatur
+            vero quis. Quaerat odit unde itaque. Quisquam recusandae eaque, adipisci porro amet pers piciatis optio,
+            numquam, consectetur tempora deserunt sed! Nobis rem, vero temporibus debitis optio dolorem maiores non
+            nulla deserunt, mollitia cupiditate rerum qui architecto, natus voluptate officiis! Odio magnam magn i
+            suscipit ullam? Repellat adipisci commodi facmodi sunt exercitationem
+            corporis error distinctio! Ab obcaecati laboriosam harum non, error, maxime est earum facilis, dolorem iure
+            magni veniam veritatis accusamus nisi! At, ratione facilis!</p>
+    </div>
+
+    <!--     thw button helps to give the button shape to click -->
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+
+    <!-- B1rowser Events:
+    click
+    contextmenu
+    mouseover/mouseout
+    mousedown/mouseup
+    mousemove
+
+    submit
+    focus
+    DOMContentLoaded
+    transitionend -->
+
+
+
+    <!-- the variables should be properly written and the '' should be given while the use of the none -->
+    <script>
+
+        let para = document.getElementById('para');
+        // below helps to give the message in the window when we hover the mouse over the paragraph.
+        para.addEventListener('mouseover', function run() {
+            // alert('Mouse inside the paragraph.') gives alert in windowbox terminates when pressed "OK"
+            console.log("Mouse inside the paragraph dude.");
+
+        });
+        para.addEventListener('mouseout', function run() {
+            // alert('Mouse outside the paragraph.')
+            console.log("Mouse outside the paragraph dude.");
+        });
+
+        function toggleHide() {
+            let btn = document.getElementById('btn');
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+
+            }
+            else {
+                para.style.display = 'block';
+
+            }
+
+        }
+    </script>
+</body>
+
+</html>

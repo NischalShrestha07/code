@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+
+<body>
+    <div class="container">
+        This is a about loops.
+
+    </div>
+    <script>
+        console.log("Learn about Loops: ");
+        // for (let i = 0; i < 5; i++) {
+        //     console.log(i);
+        // }
+
+        let friends = ["Rohan", "Sushil", "Dipan", "Hikmat"];
+        // for (let i = 0; i < friends.length; i++) {
+        //     console.log("hello friend, " + friends[i]);
+        // }
+
+        // forEach below is the easy way of writting above code more efficiently.It's for loops.
+        friends.forEach(function f(element) {
+            console.log("Hello Friend, " + element + " to the modern JavaScript Language.");
+        });
+
+        //forof
+        // for (const element of friends) {
+        //     console.log("Hello Friend, " + element + "\n" + "Welcome to JavaScript dude.");
+        // }
+
+        let Employee = {
+            name: "Harry",
+            salary: 2000,
+            channel: "Ns"
+        }
+        //below is the forin which is used to do same task as above 
+        for (key in Employee) {
+            //the tild(`) is used to print string and place the variable at the same time.
+            console.log(`The ${key} of the employee is ${Employee[key]}`);
+        }
+
+        let i = 0;
+        //while loops checks the conditions first then prints the data.
+        while (i < 4) {
+            //here when i run code below i got infinite loops so to remove that i++ should be declared to get the values only 4 time as the conditions.
+            console.log("i is less than 4");
+            i++;
+        }
+
+        //do while loops prints the given data first then checks the conditions.As in below first the data is printed then the value is checked.
+        let j = 34;
+        do {
+            console.log("Its me Narayan hello");
+            j++;
+        } while (j < 4);
+    </script>
+</body>
+
+
+
+</html>
